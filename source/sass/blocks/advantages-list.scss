@@ -32,6 +32,10 @@
     padding-left: 30px;
     padding-right: 30px;
 
+    @include vp-1279 {
+      max-width: 30%;
+    }
+
     @include vp-1023 {
         max-width: 206px;
         padding-top: 26px;

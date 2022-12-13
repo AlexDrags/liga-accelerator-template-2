@@ -6,8 +6,13 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 
+  @include vp-1279 {
+    margin: 0;
+  }
+
   @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 15px;
   }
 
   @include vp-767 {
@@ -21,19 +26,101 @@
       width: 100%;
     }
   }
+
+  & h3 {
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  & button {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    min-height: 40px;
+    min-width: 210px;
+    border: none;
+    background-color: $color-default-white;
+    color: $color-default-black;
+    margin-top: 13px;
+
+    @include hover-focus {
+      opacity: 0.7;
+    }
+
+    @include vp-1023 {
+      min-width: 239px;
+      margin-top: 30px;
+    }
+  }
 }
 
 .products-list__item {
   position: relative;
+  min-height: 386px;
+
+  // @include vp-1279 {
+  //   max-height: 390px;
+  // }
 
   @include vp-1023 {
-    min-width: 309px;
-    max-height: 386px;
-    overflow: clip;
+    // min-width: 309px;
+    max-height: 385px;
+    // overflow: clip;
+  }
+
+  @include vp-767 {
+    min-height: 386px;
+    min-width: 270px;
+  }
+
+  & span {
+    position: absolute;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-default-white;
+    bottom: 6%;
+    left: 12%;
+
+    @include vp-1023 {
+      bottom: 7%;
+    }
+
+    @include vp-767 {
+      bottom: 4%;
+      left: 9%;
+    }
+  }
+
+  & img {
+    height: 100%;
+  }
+
+  & dl {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+
+    & dt {
+      font-weight: 500;
+      font-size: 14px;
+
+    }
+
+    & dd {
+      margin: 0;
+      font-weight: 400;
+      font-size: 14px;
+    }
   }
 }
 
-.overlay {
+.products-list__overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -46,17 +133,17 @@
   background-color: $color-default-black;
 }
 
-.products-list__item:hover .overlay {
+.products-list__item:hover .products-list__overlay {
   opacity: 1;
 }
 
-.products-list__item:focus .overlay {
+.products-list__item:focus .products-list__overlay {
   opacity: 1;
 }
 
 
 
-.text {
+.products-list__text {
   color: white;
   font-size: 20px;
   position: absolute;

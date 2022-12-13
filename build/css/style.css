@@ -993,6 +993,7 @@ button,
 
 .products {
   padding-top: 61px;
+  padding-bottom: 120px;
 }
 
 .products h2 {
@@ -1014,11 +1015,69 @@ button,
   gap: 30px;
 }
 
-.products-list__item {
-  position: relative;
+.products-list h3 {
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.overlay {
+.products-list button {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  min-height: 40px;
+  min-width: 210px;
+  border: none;
+  background-color: #f9fdfb;
+  color: #011C40;
+  margin-top: 13px;
+}
+
+.products-list button.focus-visible:focus {
+  opacity: 0.7;
+}
+
+.products-list__item {
+  position: relative;
+  min-height: 386px;
+}
+
+.products-list__item span {
+  position: absolute;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fdfb;
+  bottom: 6%;
+  left: 12%;
+}
+
+.products-list__item img {
+  height: 100%;
+}
+
+.products-list__item dl {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.products-list__item dl dt {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.products-list__item dl dd {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.products-list__overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1033,15 +1092,15 @@ button,
   background-color: #011C40;
 }
 
-.products-list__item:hover .overlay {
+.products-list__item:hover .products-list__overlay {
   opacity: 1;
 }
 
-.products-list__item:focus .overlay {
+.products-list__item:focus .products-list__overlay {
   opacity: 1;
 }
 
-.text {
+.products-list__text {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -1101,6 +1160,14 @@ button,
 
   .intro__wrapper-image {
     max-width: 324px;
+  }
+
+  .advantages-list li {
+    max-width: 30%;
+  }
+
+  .products-list {
+    margin: 0;
   }
 }
 
@@ -1226,6 +1293,7 @@ button,
 
   .products {
     padding-top: 67px;
+    padding-bottom: 100px;
   }
 
   .products h2 {
@@ -1237,16 +1305,24 @@ button,
   .products-list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 15px;
   }
 
   .products-list img {
     width: 100%;
   }
 
+  .products-list button {
+    min-width: 239px;
+    margin-top: 30px;
+  }
+
   .products-list__item {
-    min-width: 309px;
-    max-height: 386px;
-    overflow: clip;
+    max-height: 385px;
+  }
+
+  .products-list__item span {
+    bottom: 7%;
   }
 }
 
@@ -1358,6 +1434,7 @@ button,
 
   .advantages {
     padding-top: 35px;
+    padding-bottom: 68px;
   }
 
   .advantages h2 {
@@ -1379,9 +1456,14 @@ button,
     margin-bottom: 13px;
   }
 
+  .products {
+    padding-top: 36px;
+  }
+
   .products h2 {
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 30px;
   }
 
   .products-list {
@@ -1389,6 +1471,16 @@ button,
     grid-template-columns: 1fr;
     margin: 0 10px;
     justify-items: center;
+  }
+
+  .products-list__item {
+    min-height: 386px;
+    min-width: 270px;
+  }
+
+  .products-list__item span {
+    bottom: 4%;
+    left: 9%;
   }
 }
 
@@ -1398,6 +1490,10 @@ button,
   }
 
   .main-nav a:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+
+  .products-list button:hover:not(.focus-visible) {
     opacity: 0.7;
   }
 }
