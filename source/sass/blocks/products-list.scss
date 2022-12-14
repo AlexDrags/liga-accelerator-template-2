@@ -63,14 +63,8 @@
   position: relative;
   min-height: 386px;
 
-  // @include vp-1279 {
-  //   max-height: 390px;
-  // }
-
   @include vp-1023 {
-    // min-width: 309px;
     max-height: 385px;
-    // overflow: clip;
   }
 
   @include vp-767 {

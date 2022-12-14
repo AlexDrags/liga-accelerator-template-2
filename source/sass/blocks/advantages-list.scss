@@ -4,7 +4,6 @@
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  // column-gap: 40px;
   flex-wrap: wrap;
 
   @include vp-767 {
