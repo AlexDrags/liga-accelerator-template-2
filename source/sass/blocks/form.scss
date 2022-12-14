@@ -19,7 +19,6 @@
     @include vp-767 {
       min-width: 230px;
       min-height: 43px;
-
     }
   }
 
@@ -38,7 +37,8 @@
 
   & button {
     border: none;
-    background-color: $color-default-black;
+    color: $color-default-black;
+    background-color: $color-default-white;
     min-width: 303px;
     min-height: 43px;
     font-weight: 600;

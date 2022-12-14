@@ -1209,6 +1209,7 @@ button,
 
 .form button {
   border: none;
+  color: #011C40;
   background-color: #f9fdfb;
   min-width: 303px;
   min-height: 43px;
