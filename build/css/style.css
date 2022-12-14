@@ -1112,6 +1112,83 @@ button,
   text-align: center;
 }
 
+.feedback {
+  background-color: #f9fdfb;
+  background-image: -webkit-image-set(url("../img/bg-feedback.webp") 1x, url("../img/feedback.png") 1x);
+  background-image: image-set(url("../img/bg-feedback.webp") 1x, url("../img/feedback.png") 1x);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.feedback h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.feedback p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.feedback__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feedback__wrapper-form {
+  background-color: #011C40;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.feedback__wrapper-form h3 {
+  color: #f9fdfb;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form [type=text],
+.form [type=tel],
+.form [type=email] {
+  min-width: 303px;
+  min-height: 43px;
+  border: none;
+  background-color: #f9fdfb;
+  padding-left: 16px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-bottom: 20px;
+}
+
+.form label {
+  color: #f9fdfb;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.form button {
+  border: none;
+  background-color: #f9fdfb;
+  min-width: 303px;
+  min-height: 43px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1324,6 +1401,11 @@ button,
   .products-list__item span {
     bottom: 7%;
   }
+
+  .feedback h2 {
+    font-size: 34px;
+    line-height: 51px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1481,6 +1563,24 @@ button,
   .products-list__item span {
     bottom: 4%;
     left: 9%;
+  }
+
+  .feedback h2 {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .feedback p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .feedback__wrapper-form h3 {
+    line-height: 25px;
+  }
+
+  .form label {
+    line-height: 12px;
   }
 }
 

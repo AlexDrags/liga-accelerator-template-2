@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  & [type="text"],
+  & [type="tel"],
+  & [type="email"] {
+    min-width: 303px;
+    min-height: 43px;
+    border: none;
+    background-color: $color-default-white;
+    padding-left: 16px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-bottom: 20px;
+  }
+
+  & label {
+    color: $color-default-white;
+    font-size: 10px;
+    line-height: 13px;
+
+    @include vp-767 {
+      line-height: 12px;
+    }
+  }
+
+  & button {
+    border: none;
+    background-color: $color-default-white;
+    min-width: 303px;
+    min-height: 43px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
