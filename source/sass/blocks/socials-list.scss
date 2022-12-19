@@ -1,0 +1,14 @@
+.icon-1 {
+  @include vp-1023 {
+    width: 9px;
+    height: 16px;
+  }
+}
+
+.icon-2,
+.icon-3 {
+  @include vp-1023 {
+    width: 16px;
+    height: 16px;
+  }
+}

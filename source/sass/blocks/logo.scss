@@ -1,32 +1,30 @@
 .logo__image--small {
-    display: none;
-    fill: $color-default-white;
+  display: none;
+  fill: $color-default-white;
 
-    @include vp-767 {
-        display: block;
-    }
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .logo__image--middle {
+  display: none;
+
+  @include vp-1023 {
+    display: block;
+  }
+
+  @include vp-767 {
     display: none;
-
-    @include vp-1023 {
-        display: block;
-    }
-
-    @include vp-767 {
-        display: none;
-    }
+  }
 }
 
 .logo__image--big {
+  @include vp-1023 {
+    display: none;
+  }
 
-    @include vp-1023 {
-        display: none;
-    }
-
-    @include vp-767 {
-        display: none;
-    }
+  @include vp-767 {
+    display: none;
+  }
 }
-

@@ -36,7 +36,10 @@
     margin-bottom: 0;
   }
 
-  & button {
+  & a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
@@ -103,7 +106,6 @@
     & dt {
       font-weight: 500;
       font-size: 14px;
-
     }
 
     & dd {
@@ -123,7 +125,7 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: $color-default-black;
 }
 
@@ -135,16 +137,12 @@
   opacity: 1;
 }
 
-
-
 .products-list__text {
-  color: white;
+  color: $color-default-white;
   font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }

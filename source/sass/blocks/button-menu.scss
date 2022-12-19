@@ -1,12 +1,22 @@
 .button-menu {
-  cursor: pointer;
-  width: 28px;
   display: none;
+  cursor: pointer;
   background-color: $color-transparent;
   border: none;
+  min-width: 25px;
+  min-height: 15px;
+  background-image: url("../img/svg/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @include vp-767 {
     display: block;
   }
 }
 
+.button-menu__icon--close {
+  position: absolute;
+  background-image: url("../img/svg/close.svg");
+  right: 10px;
+  top: 23px;
+}
