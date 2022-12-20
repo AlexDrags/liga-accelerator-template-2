@@ -2,6 +2,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import initNoJs from './modules/menu/menu';
+import './modules/phone-mask/phone-mask';
 
 
 // ---------------------------------

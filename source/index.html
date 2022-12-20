@@ -76,7 +76,7 @@
                 type="image/webp">
               <source media="(max-width: 1023px)" srcset="img/about-tablet.jpg, img/about-tablet@2x.jpg 2x">
               <source srcset="img/about.webp 1x, img/about@2x.webp 2x" type="image/webp">
-              <img src="img/about.jpg" srcset="img/about@2x.jpg" width="560" height="301" alt="Три пингвина." />
+              <img src="img/about.jpg" srcset="img/about@2x.jpg" width="560" height="301" alt="Три пингвина." loading="lazy" />
             </picture>
           </div>
 
@@ -139,7 +139,7 @@
               <picture>
                 <source srcset="img/prod-1.webp 1x, img/prod-1@2x.webp 2x" type="image/webp">
                 <img src="img/prod-1.jpg" srcset="img/prod-1@2x.jpg" width="260" height="386" alt="Круиз “Астория”."
-                  class="image">
+                  class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
                 <div class="products-list__text">
@@ -163,7 +163,7 @@
               <picture>
                 <source srcset="img/prod-8.webp 1x, img/prod-8@2x.webp 2x" type="image/webp">
                 <img src="img/prod-8.jpg" srcset="img/prod-8@2x.jpg" width="260" height="386" alt="Круиз “Элайн”."
-                  class="image">
+                  class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
                 <div class="products-list__text">
@@ -187,7 +187,7 @@
               <picture>
                 <source srcset="img/prod-3.webp 1x, img/prod-3@2x.webp 2x" type="image/webp">
                 <img src="img/prod-3.jpg" srcset="img/prod-3@2x.jpg" width="260" height="386" alt="Круиз “Атлантис”."
-                  class="image">
+                  class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
                 <div class="products-list__text">
@@ -211,7 +211,7 @@
               <picture>
                 <source srcset="img/prod-4.webp 1x, img/prod-4@2x.webp 2x" type="image/webp">
                 <img src="img/prod-4.jpg" srcset="img/prod-4@2x.jpg" width="260" height="386" alt="Круиз “Одиссей”."
-                  class="image">
+                  class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
                 <div class="products-list__text">
@@ -235,7 +235,7 @@
               <picture>
                 <source srcset="img/prod-5.webp 1x, img/prod-5@2x.webp 2x" type="image/webp">
                 <img src="img/prod-5.jpg" srcset="img/prod-5@2x.jpg" width="260" height="386" alt="Круиз “Олимпия”."
-                  class="image">
+                  class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
                 <div class="products-list__text">
@@ -259,7 +259,7 @@
               <picture>
                 <source srcset="img/prod-6.webp 1x, img/prod-6@2x.webp 2x" type="image/webp">
                 <img src="img/prod-6.jpg" srcset="img/prod-6@2x.jpg" width="260" height="386" alt="Круиз “Аврора”."
-                  class="image">
+                  class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
                 <div class="products-list__text">
@@ -283,7 +283,7 @@
               <picture>
                 <source srcset="img/prod-7.webp 1x, img/prod-7@2x.webp 2x" type="image/webp">
                 <img src="img/prod-7.jpg" srcset="img/prod-7@2x.jpg" width="260" height="386" alt="Круиз “Леонор”."
-                  class="image">
+                  class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
                 <div class="products-list__text">
@@ -307,7 +307,7 @@
               <picture>
                 <source srcset="img/prod-8.webp 1x, img/prod-8@2x.webp 2x" type="image/webp">
                 <img src="img/prod-8.jpg" srcset="img/prod-8@2x.jpg" width="260" height="386" alt="Круиз “Минион - 1”."
-                  class="image">
+                  class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
                 <div class="products-list__text">
@@ -342,10 +342,10 @@
             <h3>Оставьте заявку<br /> и мы свяжемся<br /> с вами в&nbsp;ближайшее время</h3>
             <form action="https://echo.htmlacademy.ru/" method="post" class="feedback__form form" id="feedback-form">
               <input type="text" name="name" id="namePerson" placeholder="Имя" required>
-              <input type="tel" name="phone" id="telPerson" placeholder="Телефон" required>
+              <input type="tel" name="phone" id="telPerson" placeholder="Телефон" data-phone-pattern required>
               <input type="email" name="mail" id="emailPerson" placeholder="Email" required>
               <label for="accept">
-                <input class="visually-hidden" type="checkbox" name="isAgree" id="accept" checked>
+                <input class="visually-hidden" type="checkbox" name="isAgree" id="accept" checked required>
                 <span></span>
                 <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
               </label>
