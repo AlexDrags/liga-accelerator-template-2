@@ -71,12 +71,11 @@
             <picture>
               <source media="(max-width: 767px)" srcset="img/about-mobile.webp, img/about-mobile@2x.webp 2x"
                 type="image/webp">
-              <source media="(max-width: 767px)" srcset="img/about-mobile.jpg, img/about-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="img/about-tablet.webp, img/about-tablet@2x.webp 2x"
                 type="image/webp">
-              <source media="(max-width: 1023px)" srcset="img/about-tablet.jpg, img/about-tablet@2x.jpg 2x">
               <source srcset="img/about.webp 1x, img/about@2x.webp 2x" type="image/webp">
-              <img src="img/about.jpg" srcset="img/about@2x.jpg" width="560" height="301" alt="Три пингвина." loading="lazy" />
+              <img src="img/about.jpg" srcset="img/about@2x.jpg" width="560" height="301" alt="Три пингвина."
+                loading="lazy" />
             </picture>
           </div>
 
@@ -341,8 +340,11 @@
           <div class="feedback__wrapper-form">
             <h3>Оставьте заявку<br /> и мы свяжемся<br /> с вами в&nbsp;ближайшее время</h3>
             <form action="https://echo.htmlacademy.ru/" method="post" class="feedback__form form" id="feedback-form">
+              <label class="visually-hidden" for="namePerson">Имя</label>
               <input type="text" name="name" id="namePerson" placeholder="Имя" required>
+              <label class="visually-hidden" for="telPerson">Телефон</label>
               <input type="tel" name="phone" id="telPerson" placeholder="Телефон" data-phone-pattern required>
+              <label class="visually-hidden" for="emailPerson">Электронная почта</label>
               <input type="email" name="mail" id="emailPerson" placeholder="Email" required>
               <label for="accept">
                 <input class="visually-hidden" type="checkbox" name="isAgree" id="accept" checked required>

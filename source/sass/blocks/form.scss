@@ -22,7 +22,7 @@
     }
   }
 
-  & label {
+  & label:last-of-type {
     color: $color-default-white;
     font-size: 10px;
     line-height: 13px;

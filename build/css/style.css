@@ -1233,7 +1233,7 @@ button,
   line-height: 21px;
 }
 
-.form label {
+.form label:last-of-type {
   color: #f9fdfb;
   font-size: 10px;
   line-height: 13px;
@@ -1243,7 +1243,7 @@ button,
   position: relative;
 }
 
-.form label span:first-of-type {
+.form label:last-of-type span:first-of-type {
   position: absolute;
   background-color: #f9fdfb;
   width: 18px;
@@ -1936,18 +1936,18 @@ iframe {
     min-height: 43px;
   }
 
-  .form label {
+  .form label:last-of-type {
     line-height: 12px;
     margin-bottom: 23px;
     padding-left: 28px;
   }
 
-  .form label span:first-of-type {
+  .form label:last-of-type span:first-of-type {
     width: 20px;
     height: 20px;
   }
 
-  .form label span:last-of-type {
+  .form label:last-of-type span:last-of-type {
     display: block;
     text-align: left;
   }
