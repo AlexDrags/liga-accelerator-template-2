@@ -20,6 +20,10 @@
       min-width: 230px;
       min-height: 43px;
     }
+
+    @include hover-focus {
+      outline: 2px solid rgb(241, 228, 228);
+    }
   }
 
   & label:last-of-type {
@@ -37,6 +41,14 @@
       padding-left: 28px;
     }
 
+    & br {
+      display: none;
+
+      @include vp-767 {
+        display: block;
+      }
+    }
+
     & span:first-of-type {
       position: absolute;
       background-color: $color-default-white;
@@ -44,6 +56,7 @@
       height: 18px;
       left: 0;
       top: 0;
+      cursor: pointer;
 
       @include vp-767 {
         width: 20px;
@@ -52,11 +65,17 @@
     }
 
     & span:last-of-type {
+      user-select: none;
+
       @include vp-767 {
         display: block;
         text-align: left;
       }
     }
+  }
+
+  & input:hover ~ span:first-of-type {
+    outline: 2px solid rgb(241, 228, 228);
   }
 
   & input:focus ~ span:first-of-type {
@@ -70,6 +89,10 @@
     height: 6px;
     left: 3px;
     top: 3px;
+
+    @include vp-767 {
+      top: 5px;
+    }
   }
 
   & button {

@@ -1,5 +1,4 @@
 .advantages {
-  max-width: 2600px;
   margin: 0 auto;
   padding-top: 87px;
   padding-bottom: 120px;
@@ -8,6 +7,7 @@
   background-image: image-set(url("../img/bg-advantages.webp") 1x, url("../img/bg-advantages.png") 1x);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   @include vp-1023 {
     padding-top: 69px;

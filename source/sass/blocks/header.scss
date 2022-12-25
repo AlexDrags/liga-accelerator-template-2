@@ -5,21 +5,23 @@
   background-repeat: no-repeat;
   background-position: center bottom 0;
   background-size: cover;
-  max-width: 2600px;
   width: 100%;
   margin: 0 auto;
   color: $color-default-white;
-  min-height: 650px;
+  min-height: 658px;
   padding-top: 35px;
+  padding-bottom: 30px;
 
   @include vp-1023 {
     min-height: 638px;
     padding-top: 23px;
+    background-image: image-set(url("../img/bg-header-tablet.webp") 1x, url("../img/bg-header-tablet.jpg") 1x);
   }
 
   @include vp-767 {
     padding-top: 20px;
     min-height: 500px;
+    background-image: image-set(url("../img/bg-header-tablet.webp") 1x, url("../img/bg-header-tablet.jpg") 1x);
   }
 
   &__wrapper-title {
@@ -98,4 +100,8 @@
 
 .header__logo-wrapper {
   margin-right: auto;
+}
+
+.header__main-nav {
+  margin-left: 15px;
 }

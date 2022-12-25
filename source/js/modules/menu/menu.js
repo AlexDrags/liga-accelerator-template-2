@@ -1,7 +1,9 @@
 const menuList = document.querySelector('.menu-js');
 const buttonMenu = document.querySelector('.button-js');
+const body = document.querySelector('body');
 
 function openMenu() {
+  body.classList.toggle('overlay');
   menuList.classList.toggle('main-nav__list--nojs--open');
   buttonMenu.classList.toggle('button-menu__icon--close');
 }

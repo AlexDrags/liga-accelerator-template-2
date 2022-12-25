@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <meta name="description" content="Описание проекта">
   <title>ProjectName</title>
@@ -29,7 +31,7 @@
               </svg>
             </a>
           </div>
-          <nav class="main-nav">
+          <nav class="header__main-nav main-nav">
             <!-- Класс открытого меню без js: .main-nav__list--nojs--open; закрытого: .main-nav__list-nojs--close -->
             <div class="main-nav__wrapper">
               <ul class="main-nav__list main-nav__list--nojs--open menu-js">
@@ -71,7 +73,7 @@
             <picture>
               <source media="(max-width: 767px)" srcset="img/about-mobile.webp, img/about-mobile@2x.webp 2x"
                 type="image/webp">
-              <source media="(max-width: 1023px)" srcset="img/about-tablet.webp, img/about-tablet@2x.webp 2x"
+              <source media="(max-width: 1279px)" srcset="img/about-tablet.webp, img/about-tablet@2x.webp 2x"
                 type="image/webp">
               <source srcset="img/about.webp 1x, img/about@2x.webp 2x" type="image/webp">
               <img src="img/about.jpg" srcset="img/about@2x.jpg" width="560" height="301" alt="Три пингвина."
@@ -92,7 +94,7 @@
               <svg class="advantages-list__image advantages-list__image--big" width="27" height="32">
                 <use xlink:href="img/sprite.svg#advantag-1"></use>
               </svg>
-              <h3>Небольшой<br /> круизный лайнер</h3>
+              <h3>Небольшой<br /> круизный&nbsp;лайнер</h3>
               <p>
                 Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей,
                 поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность
@@ -119,7 +121,7 @@
               <svg class="advantages-list__image advantages-list__image--big" width="44" height="32">
                 <use xlink:href="img/sprite.svg#advantag-3"></use>
               </svg>
-              <h3>Экскурсионные<br /> туры на Zodiac</h3>
+              <h3>Экскурсионные<br /> туры на&nbsp;Zodiac</h3>
               <p>
                 Экскурсионные туры к&nbsp;берегам Антарктиды совершаются
                 на&nbsp;оборудованных лодках типа Zodiack c&nbsp;опытными
@@ -141,7 +143,7 @@
                   class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
-                <div class="products-list__text">
+                <!-- <div class="products-list__text"> -->
                   <h3>Круиз&nbsp;“Астория”</h3>
                   <dl>
                     <dt>Маршрут</dt>
@@ -154,7 +156,7 @@
                     <dd>от 11500 $</dd>
                   </dl>
                   <a class="products-list__button" target="_blank" href="/">Забронировать</a>
-                </div>
+                <!-- </div> -->
               </div>
             </li>
             <li class="products-list__item" tabindex="0">
@@ -165,7 +167,7 @@
                   class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
-                <div class="products-list__text">
+                <!-- <div class="products-list__text"> -->
                   <h3>Круиз&nbsp;“Элайн”</h3>
                   <dl>
                     <dt>Маршрут</dt>
@@ -178,7 +180,7 @@
                     <dd>от 14500 $</dd>
                   </dl>
                   <a class="products-list__button" target="_blank" href="/">Забронировать</a>
-                </div>
+                <!-- </div> -->
               </div>
             </li>
             <li class="products-list__item" tabindex="0">
@@ -213,7 +215,7 @@
                   class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
-                <div class="products-list__text">
+                <!-- <div class="products-list__text"> -->
                   <h3>Круиз&nbsp;“Одиссей”</h3>
                   <dl>
                     <dt>Маршрут</dt>
@@ -226,7 +228,7 @@
                     <dd>от 9700 $</dd>
                   </dl>
                   <a class="products-list__button" target="_blank" href="/">Забронировать</a>
-                </div>
+                <!-- </div> -->
               </div>
             </li>
             <li class="products-list__item" tabindex="0">
@@ -237,7 +239,7 @@
                   class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
-                <div class="products-list__text">
+                <!-- <div class="products-list__text"> -->
                   <h3>Круиз&nbsp;“Олимпия”</h3>
                   <dl>
                     <dt>Маршрут</dt>
@@ -250,7 +252,7 @@
                     <dd>от 18600 $</dd>
                   </dl>
                   <a class="products-list__button" target="_blank" href="/">Забронировать</a>
-                </div>
+                <!-- </div> -->
               </div>
             </li>
             <li class="products-list__item" tabindex="0">
@@ -261,7 +263,7 @@
                   class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
-                <div class="products-list__text">
+                <!-- <div class="products-list__text"> -->
                   <h3>Круиз&nbsp;“Аврора”</h3>
                   <dl>
                     <dt>Маршрут</dt>
@@ -274,7 +276,7 @@
                     <dd>от 11700 $</dd>
                   </dl>
                   <a class="products-list__button" target="_blank" href="/">Забронировать</a>
-                </div>
+                <!-- </div> -->
               </div>
             </li>
             <li class="products-list__item" tabindex="0">
@@ -285,7 +287,7 @@
                   class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
-                <div class="products-list__text">
+                <!-- <div class="products-list__text"> -->
                   <h3>Круиз&nbsp;“Леонор”</h3>
                   <dl>
                     <dt>Маршрут</dt>
@@ -298,7 +300,7 @@
                     <dd>от 12500 $</dd>
                   </dl>
                   <a class="products-list__button" target="_blank" href="/">Забронировать</a>
-                </div>
+                <!-- </div> -->
               </div>
             </li>
             <li class="products-list__item" tabindex="0">
@@ -309,7 +311,7 @@
                   class="image" loading="lazy">
               </picture>
               <div class="products-list__overlay">
-                <div class="products-list__text">
+                <!-- <div class="products-list__text"> -->
                   <h3>Круиз “Минион&nbsp;&mdash;&nbsp;1”</h3>
                   <dl>
                     <dt>Маршрут</dt>
@@ -321,8 +323,8 @@
                     <dt>Цена</dt>
                     <dd>от 12300 $</dd>
                   </dl>
-                  <button type="button">Забронировать</button>
-                </div>
+                  <a class="products-list__button" target="_blank" href="/">Забронировать</a>
+                <!-- </div> -->
               </div>
             </li>
           </ul>
@@ -349,7 +351,7 @@
               <label for="accept">
                 <input class="visually-hidden" type="checkbox" name="isAgree" id="accept" checked required>
                 <span></span>
-                <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                <span>Я&nbsp;согласен на&nbsp;обработку<br/> моих персональных данных</span>
               </label>
               <button type="submit">Оставить заявку</button>
             </form>

@@ -43,6 +43,10 @@
   clip-path: inset(100%);
 }
 
+.overlay {
+  background-color: rgba(0, 43, 102, 0.5);
+}
+
 .scroll-lock-ios {
   position: fixed;
 

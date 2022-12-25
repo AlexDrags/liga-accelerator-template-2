@@ -31,7 +31,8 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    margin-bottom: 26px;
+    margin-bottom: 33px;
+    margin-top: 10px;
 
     @include vp-1023 {
       margin-top: 0;
@@ -92,7 +93,7 @@
 
     &::before {
       position: absolute;
-      content: url("../../img/svg/phone-icon.svg");
+      content: url("../img/svg/phone-icon.svg");
       width: 18px;
       height: 18px;
       left: 0;
@@ -115,11 +116,17 @@
   min-height: 198px;
 
   @include vp-1023 {
-    min-height: 208px;
+    min-height: 214px;
   }
 
   @include vp-767 {
     margin-bottom: 43px;
+  }
+
+  & a {
+    @include hover-focus {
+      opacity: 0.7;
+    }
   }
 }
 

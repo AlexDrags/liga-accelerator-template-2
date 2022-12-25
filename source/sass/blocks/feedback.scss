@@ -1,10 +1,10 @@
 .feedback {
-  max-width: 2600px;
   margin: 0 auto;
   background-color: $color-default-white;
   background-image: image-set(url("../img/bg-feedback.webp") 1x, url("../img/bg-feedback.png") 1x);
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: cover;
   padding-top: 50px;
   padding-bottom: 50px;
 

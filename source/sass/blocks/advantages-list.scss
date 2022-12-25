@@ -34,7 +34,7 @@
     }
 
     @include vp-1023 {
-      max-width: 206px;
+      min-width: 206px;
       padding-top: 26px;
       padding-left: 20px;
       min-height: 310px;
