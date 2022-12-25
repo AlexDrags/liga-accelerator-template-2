@@ -123,25 +123,13 @@
       margin-bottom: 10px;
     }
   }
-
-  @include hover-focus {
-    & img {
-      display: none;
-      opacity: 0;
-    }
-
-    & span {
-      display: none;
-      opacity: 0;
-    }
-  }
 }
 
 .products-list__overlay {
   display: none;
   padding-left: 25px;
   padding-top: 29px;
-   min-height: 386px;
+  min-height: 386px;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -155,6 +143,16 @@
   @include vp-767 {
     padding-left: 23px;
   }
+}
+
+.products-list__item:hover img, .products-list__item:hover span {
+  display: none;
+  opacity: 0;
+}
+
+.products-list__item:focus img, .products-list__item:focus span {
+  display: none;
+  opacity: 0;
 }
 
 .products-list__item:hover .products-list__overlay {

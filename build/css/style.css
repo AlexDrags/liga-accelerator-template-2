@@ -1129,16 +1129,6 @@ button,
   margin-bottom: 10px;
 }
 
-.products-list__item.focus-visible:focus img {
-  display: none;
-  opacity: 0;
-}
-
-.products-list__item.focus-visible:focus span {
-  display: none;
-  opacity: 0;
-}
-
 .products-list__overlay {
   display: none;
   padding-left: 25px;
@@ -1149,6 +1139,18 @@ button,
   opacity: 0;
   background-color: #011c40;
   color: #f9fdfb;
+}
+
+.products-list__item:hover img,
+.products-list__item:hover span {
+  display: none;
+  opacity: 0;
+}
+
+.products-list__item:focus img,
+.products-list__item:focus span {
+  display: none;
+  opacity: 0;
 }
 
 .products-list__item:hover .products-list__overlay {
@@ -2162,16 +2164,6 @@ iframe {
 
   .products-list a:hover:not(.focus-visible) {
     opacity: 0.7;
-  }
-
-  .products-list__item:hover:not(.focus-visible) img {
-    display: none;
-    opacity: 0;
-  }
-
-  .products-list__item:hover:not(.focus-visible) span {
-    display: none;
-    opacity: 0;
   }
 
   .form [type=text]:hover:not(.focus-visible),
