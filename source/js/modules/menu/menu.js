@@ -5,7 +5,7 @@ const menuLinks = document.querySelectorAll('.main-nav__link');
 
 function closeMenu() {
   body.classList.toggle('overlay');
-  menuList.classList.toggle('main-nav__list--nojs--open');
+  menuList.classList.remove('main-nav__list--nojs--open');
 }
 
 function openMenu() {
