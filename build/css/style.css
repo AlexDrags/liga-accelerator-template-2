@@ -1156,6 +1156,11 @@ button,
   opacity: 1;
 }
 
+.products-list__item:focus .products-list__overlay {
+  display: block;
+  opacity: 1;
+}
+
 .feedback {
   margin: 0 auto;
   background-color: #f9fdfb;

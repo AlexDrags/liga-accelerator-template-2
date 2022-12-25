@@ -161,3 +161,8 @@
   display: block;
   opacity: 1;
 }
+
+.products-list__item:focus .products-list__overlay {
+  display: block;
+  opacity: 1;
+}
