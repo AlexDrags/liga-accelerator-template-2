@@ -66,13 +66,16 @@
   }
 
   & .main-nav__list--nojs--open {
+
     @include vp-767 {
+      min-height: 100vh;
+      max-height: 100vh;
+      overflow:scroll;
       display: flex;
       flex-direction: column;
       grid-row: 10px;
       align-items: baseline;
       padding-top: 72px;
-      min-height: 7369px;
       padding-left: 15px;
       z-index: 1;
     }

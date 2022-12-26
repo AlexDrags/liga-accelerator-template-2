@@ -611,6 +611,9 @@ button,
 
 .overlay {
   background-color: rgba(0, 43, 102, 0.5);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .scroll-lock-ios {
@@ -1858,6 +1861,9 @@ iframe {
   }
 
   .main-nav .main-nav__list--nojs--open {
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: scroll;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1871,7 +1877,6 @@ iframe {
     -ms-flex-align: baseline;
     align-items: baseline;
     padding-top: 72px;
-    min-height: 7369px;
     padding-left: 15px;
     z-index: 1;
   }
