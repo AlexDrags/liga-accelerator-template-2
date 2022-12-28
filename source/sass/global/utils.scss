@@ -44,10 +44,20 @@
 }
 
 .overlay {
-  background-color: rgba(0, 43, 102, 0.5);
   width:100vw;
   height:100vh;
   overflow:hidden;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0, 43, 102, 0.5);
+    z-index: 1;
+  }
 }
 
 .scroll-lock-ios {

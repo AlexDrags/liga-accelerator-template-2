@@ -610,10 +610,20 @@ button,
 }
 
 .overlay {
-  background-color: rgba(0, 43, 102, 0.5);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.overlay::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 43, 102, 0.5);
+  z-index: 1;
 }
 
 .scroll-lock-ios {
@@ -1134,8 +1144,10 @@ button,
 
 .products-list__overlay {
   display: none;
+  overflow: scroll;
   padding-left: 25px;
   padding-top: 29px;
+  padding-bottom: 10px;
   min-height: 386px;
   height: 100%;
   width: 100%;
@@ -1830,6 +1842,11 @@ iframe {
     display: block;
   }
 
+  .header__main-nav ul {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
   .logo__image--small {
     display: block;
   }
@@ -1962,6 +1979,7 @@ iframe {
   .products-list__item {
     min-height: 386px;
     min-width: 270px;
+    max-width: 430px;
     width: 100%;
   }
 
