@@ -16,9 +16,10 @@
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     margin: 0 10px;
-    justify-items: center;
+    align-items: center;
   }
 
   & img {
@@ -68,17 +69,17 @@
 .products-list__item {
   position: relative;
   min-height: 386px;
-  overflow: visible;
 
   @include vp-1023 {
     max-height: 385px;
   }
 
   @include vp-767 {
-    min-height: 386px;
     min-width: 270px;
-    max-width: 430px;
     width: 100%;
+    max-width: 430px;
+    max-height: 500px;
+    aspect-ratio: 0.7/1;
   }
 
   & span {
@@ -128,16 +129,16 @@
 
 .products-list__overlay {
   display: none;
-  overflow: scroll;
   padding-left: 25px;
   padding-top: 29px;
   padding-bottom: 10px;
-  min-height: 386px;
-  height: 100%;
-  width: 100%;
   opacity: 0;
   background-color: $color-default-black;
   color: $color-default-white;
+
+  @include vp-1279 {
+    padding-left: 6px;
+  }
 
   @include vp-1023 {
     padding-left: 37px;
@@ -148,12 +149,14 @@
   }
 }
 
-.products-list__item:hover img, .products-list__item:hover span {
+.products-list__item:hover img,
+.products-list__item:hover span {
   display: none;
   opacity: 0;
 }
 
-.products-list__item:focus img, .products-list__item:focus span {
+.products-list__item:focus img,
+.products-list__item:focus span {
   display: none;
   opacity: 0;
 }
@@ -166,4 +169,14 @@
 .products-list__item:focus .products-list__overlay {
   display: block;
   opacity: 1;
+}
+
+.products-list__spec-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  background-color: $color-default-black;
 }

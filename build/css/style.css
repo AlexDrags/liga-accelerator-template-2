@@ -1104,7 +1104,6 @@ button,
 .products-list__item {
   position: relative;
   min-height: 386px;
-  overflow: visible;
 }
 
 .products-list__item span {
@@ -1144,13 +1143,9 @@ button,
 
 .products-list__overlay {
   display: none;
-  overflow: scroll;
   padding-left: 25px;
   padding-top: 29px;
   padding-bottom: 10px;
-  min-height: 386px;
-  height: 100%;
-  width: 100%;
   opacity: 0;
   background-color: #011c40;
   color: #f9fdfb;
@@ -1176,6 +1171,16 @@ button,
 .products-list__item:focus .products-list__overlay {
   display: block;
   opacity: 1;
+}
+
+.products-list__spec-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  background-color: #011c40;
 }
 
 .feedback {
@@ -1524,6 +1529,10 @@ iframe {
 
   .products-list {
     margin: 0;
+  }
+
+  .products-list__overlay {
+    padding-left: 6px;
   }
 }
 
@@ -1966,10 +1975,17 @@ iframe {
   }
 
   .products-list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: 0 10px;
-    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .products-list a {
@@ -1977,10 +1993,11 @@ iframe {
   }
 
   .products-list__item {
-    min-height: 386px;
     min-width: 270px;
-    max-width: 430px;
     width: 100%;
+    max-width: 430px;
+    max-height: 500px;
+    aspect-ratio: 0.7/1;
   }
 
   .products-list__item span {
